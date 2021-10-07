@@ -1,0 +1,39 @@
+   
+    <!-- <div *ngIf="showMessage" class="alert alert-success" role="alert">
+        Workout successfully deleted!
+      </div> -->
+      <style>
+        table, th, td {
+          border: 1px solid white;
+          border-collapse: collapse;
+        }
+        th, td {
+          background-color: #96D4D4;
+        }
+        </style>
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">User name</th>
+              <th scope="col">language</th>
+              <th scope="col">Requested couse name</th>
+              <th scope="col" colspan="2">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+                <tr>
+              <!-- <th scope="row">{{i + 1}}</th> -->
+              <td>1</td>
+              <td>raj</td>
+              <td>English</td>
+              <td>java</td>
+    
+            <td><button  class="btn btn-danger"> Accept </button></td>
+              <td><button class="btn btn-danger"> Reject </button></td>
+    
+            </tr>
+    
+          </tbody>
+        </table>
+

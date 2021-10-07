@@ -1,0 +1,61 @@
+<mat-toolbar>
+    User Profile
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+    <div class="header">
+        <img class="avatar mat-elevator-z8" src="assets/images/user.jpg">
+        <h4 class="name">John Smith</h4>
+        <p class="country">India</p>
+    </div>
+    <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            Edit Profile
+        </button>
+        
+        <button mat-button class="menu-button">
+            My Application
+        </button>
+        
+        <button mat-button class="menu-button">
+            My Courses
+        </button>
+        <mat-divider></mat-divider>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <div class="content mat-elevation-z4">
+            <div class="input-group mb-3">
+                
+                <input type="text" #search (keyup)="0" class="form-control" placeholder="Search a Mentor" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            
+            <mat-card *ngFor="let course of courses">
+                <div class="search-result_head" >
+                    
+                    
+                    <div >
+                        <mat-card-title>{{course.mentor_name}}</mat-card-title>
+                        <mat-card-subtitle><h2>{{course.course_name}}</h2></mat-card-subtitle>
+                        <mat-card-content class="card-content">{{course.desc}}</mat-card-content>
+                        
+                        <mat-card-actions>
+                            <button mat-button class="button"> BOOK </button>
+                        </mat-card-actions>
+                    </div>
+                    
+                    <div class="search-result_icon">
+                        <img mat-card-image src="{{course.mentor_image}}">
+                        
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+      </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+

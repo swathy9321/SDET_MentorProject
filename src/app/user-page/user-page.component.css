@@ -1,0 +1,78 @@
+mat-toolbar{
+    background: black;
+    color: white;
+}
+mat-card{
+    margin-bottom: 2em;
+    
+}
+mat-sidenav{
+margin: 16px;
+  width: 200px;
+  border-right: none;
+  background: black;
+  color: white;
+  border-radius: 16px;
+  padding: 16px;
+}
+mat-card-image{
+    
+    display: inline-block;
+    vertical-align: middle;
+}
+.search-result_icon{
+    /* margin: 0; */
+    padding: 5px;
+    width: 20%;
+    height: auto;
+    max-height: 50%;
+}
+.menu-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    
+}
+.content{
+    /* padding: 2px; */
+    padding: 16px;
+    height: 100vh;
+    margin: 16px;
+    margin-left: 32px;
+    border-radius: 10px;
+}
+.name{
+    margin: 0;
+    margin-top: 8px;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+}
+.country{
+    margin-top: 2px;
+    margin-bottom: 16px;
+}
+.avatar{
+    border-radius: 200px;
+    width: 120px;
+    align-items: center;
+    
+}
+mat-divider{
+    background-color: white;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.card-content{
+    width:100%;
+}
+.search-result_head{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    background: #6f727c;
+    color: white;
+}
